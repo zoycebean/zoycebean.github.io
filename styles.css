@@ -1,0 +1,50 @@
+* {
+    font-family: "Rockwell", sans-serif;
+    /* outline: 2px solid red; */
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+h1 {
+    color: green;
+    font-size: 26px;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+h3 {
+    color: purple;
+    font-size: 16px;
+}
+p {
+    color: purple;
+    margin-left: 20px;
+}
+
+.exciting-things {
+    display: inline-flex;
+    color: pink;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 5px dotted pink;
+    border-bottom: 3px solid green;
+    padding: 10px;
+}
+
+#title {
+    background-color: rgb(246, 203, 123);
+}
+
+img {
+    height: auto;
+    width: 200px;
+}
