@@ -1,0 +1,21 @@
+.music-location {
+    height: 200px;
+    width: auto;
+    border-radius: 12px;
+    border: 5px dashed var(--faded-orange);
+}
+
+.music-location:hover {
+    cursor: pointer;
+}
+
+.options-banner {
+    align-content: flex-end
+}
+
+#tile-display {
+    margin: 30px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

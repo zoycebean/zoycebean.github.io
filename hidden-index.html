@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- yippee!!! -->
+<!-- some notes: jpg good for photos, gifs for animations, pngs/svgs for icons -->
+ 
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/hidden-index.css">
+        <meta charset="UTF-8">
+        <title>
+            warmalade
+        </title>
+    </head>
+
+    <body>
+        <h1 id="title">welcome to my warmalade!</h1>
+        <label for="weather">Select the weather type today: </label>
+        <select id="weather">
+        <option value="">--Make a choice--</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="snowing">Snowing</option>
+        <option value="overcast">Overcast</option>
+        </select>
+
+        <p id="weather-comment"></p>
+
+        <div class="contents">
+            <div class="main-container">
+                <div>
+                    <a href="./about.html">
+                        <img src="icons/about.png" class="icon">
+                        <p class="icon-text">about</p>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="./music.html">
+                        <img src="icons/music.png" class="icon">
+                        <p class="icon-text">music</p>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="./shelf.html">
+                        <img src="icons/shelf.png" class="icon" width="40">
+                        <p class="icon-text">shelf</p>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="./photo-album.html">
+                        <img src="icons/photo-album.png" class="icon">
+                        <p class="icon-text">photo album</p>
+                    </a>
+                </div>
+            </div>
+            <div id="gumball-machine">
+                <img id="gumball" src="./icons/gumball-machine.png">
+                <p id="gumball-text"></p>
+            </div>
+        </div>
+        <script src="./js/hidden-index.js"></script>
+    </body>
+</html>
+

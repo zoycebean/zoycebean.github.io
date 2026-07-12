@@ -1,0 +1,134 @@
+:root {
+    --soft-green: rgb(113, 159, 113);
+    --dark-green: rgb(35, 107, 35);
+    --faded-orange: rgb(237, 173, 53);
+    --peach: rgb(255, 218, 185);
+    --darker-peach: rgb(255, 187, 127);
+    --gumball-red: rgb(237, 35, 35);
+}
+
+* {
+    font-family: "Rockwell", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+h1 {
+    color: var(--soft-green);
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--soft-green);
+    font-size: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+h3 {
+    color: purple;
+    font-size: 16px;
+}
+
+p {
+    color: purple;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    background-color: var(--peach);
+    font-size: 26px;
+    padding: 30px;
+    padding-top: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+img {
+    height: auto;
+    width: 200px;
+}
+
+.contents {
+    padding: 30px;
+    margin: 20px;
+    border: 20px ridge pink;
+    background-color: rgb(251, 227, 231);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.exciting-things {
+    display: inline-flex;
+    color: rgb(249, 143, 161);
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 3px solid var(--dark-green);
+    border-bottom: 3px solid var(--dark-green);
+    padding: 10px;
+}
+
+.rounded-heading {
+    background-color: peachpuff;
+    border: 5px solid rgb(255, 200, 152);
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    width: max-content;
+}
+
+.main-container .icon {
+    width: 60px;
+    height: auto;
+}
+
+.icon {
+    background-color: transparent;
+    border: none;
+}
+
+.icon-text {
+    font-weight: bold;
+    text-align: center;
+    color:rgb(252, 124, 146);
+    margin-top: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 30px;
+    padding: 30px;
+    border: 5px dotted rgb(252, 124, 146);
+}
+
+.options-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 30px 80px;
+}
+
+#return-home-button {
+    border-radius: 12px;
+    border: 2px solid var(--darker-peach);
+    padding: 10px;
+    background-color: var(--peach);
+    cursor: pointer;
+    transition: background-color 1s ease;
+    color: var(--soft-green);
+}
+
+#return-home-button:hover {
+  background: var(--darker-peach);
+}

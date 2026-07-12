@@ -1,0 +1,70 @@
+.shelf-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+.book {
+    display: flex;
+    width: 330px;
+    height: 380px;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    border:15px ridge rgb(249, 143, 161);
+    margin: 20px;
+    padding: 20px;
+}
+
+.book-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating-notes-quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-title-author {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    font-size: 16px;
+    font-style: italic;
+    height: 16px;
+}
+
+.book-rating {
+    font-size: 18px;
+    height: 40px;
+}
+
+.book-cover {
+    height: 200px;
+    width: auto;
+    margin: 20px 0px;
+}
+
+.book-inner .icon {
+    width: 30px;
+    height: auto;
+}

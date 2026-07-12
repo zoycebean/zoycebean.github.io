@@ -1,0 +1,79 @@
+select {
+    border-radius: 12px;
+    border: 2px solid var(--darker-peach);
+    background: var(--peach);
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    width: 240px;
+}
+
+select:hover,
+select:focus {
+  background: var(--darker-peach);
+}
+
+.album-photo {
+    border-radius: 12px;
+    border: 3px solid var(--faded-orange);
+    width: 200px;
+    height: auto;
+}
+
+#album {
+    color: var(--soft-green);
+    font-weight: 30px;
+}
+
+#album-date {
+    color: var(--faded-orange);
+}
+
+#album-display {
+    margin: 30px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#album-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    gap: 20px;
+    width: 240px;
+    height: 340px;
+    border-radius: 12px;
+}
+
+.album-profile-active {
+    background-color: var(--peach);
+    border: 2px solid var(--darker-peach);
+
+}
+
+#album-title {
+    color: var(--dark-green);
+    text-align: start;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#map {
+    height: 200px;
+    width: 200px;
+}
+
+.map-active {
+    border: 5px dashed var(--faded-orange);
+    border-radius: 12px;
+}
+
+#photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 740px;
+}

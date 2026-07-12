@@ -2,7 +2,14 @@
 
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/photo-album.css">
         <meta charset="UTF-8">
         <title>
             photo album
@@ -11,12 +18,26 @@
 
     <body>
         <h1 id="title">photo album !!!</h1>
-        <label for="album">choose the album</label>
-        <select id="album">
-            <option value="">gila national forest, new mexico</option>
-            <option value="rodman">rodman, new york</option>
-        </select>
+        <div class="options-banner">
+            <select id="album">
+                <option value="">choose an album!</option>
+                <option value="gila">(1) gila national forest</option>
+                <option value="rodman">(2) rodman</option>
+            </select>
+            <a href="./hidden-index.html"><button id="return-home-button">back home</button></a>
+        </div>
+
+        <div id="album-display">
+            <div id="album-profile">
+                <h2 id="album-title"></h2>
+                <h3 id="album-date"></h3>
+                <div id="map"></div>
+            </div>
+            <div id="photos">
+            </div>
+        </div>
     </body>
 
     <script src="./js/photo-album.js"></script>
+
 </html>
