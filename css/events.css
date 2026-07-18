@@ -9,8 +9,15 @@
     cursor: pointer;
 }
 
+.event-tile {
+    height: 400px;
+    width: auto;
+}
+
 .options-banner {
-    align-content: flex-end
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
 }
 
 #tile-display {
@@ -18,10 +25,4 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.poster {
-    margin: 30px 80px;
-    height: 600px;
-    width: auto;
 }

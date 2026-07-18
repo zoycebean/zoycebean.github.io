@@ -1,29 +1,31 @@
 :root {
-    --soft-green: rgb(113, 159, 113);
+    --title-color: rgb(0, 108, 103);
+    --title-background: rgb(255, 202, 79); /*(255, 177, 0);*/
+    --h2-color: rgb(255, 127, 22);
+    --paragraph-text-color: rgb(13, 68, 116);
     --dark-green: rgb(35, 107, 35);
     --faded-orange: rgb(237, 173, 53);
-    --peach: rgb(255, 218, 185);
-    --darker-peach: rgb(255, 187, 127);
+    --return-home-button-background: rgb(171, 190, 75);
+    --return-home-button-border: rgb(147, 165, 59);
     --gumball-red: rgb(237, 35, 35);
 }
 
 * {
-    font-family: "Rockwell", sans-serif;
+    font-family: "Futura", sans-serif;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
   }
 
 h1 {
-    color: var(--soft-green);
+    color: var(--title-color);
     font-size: 20px;
     text-align: center;
 }
 
 h2 {
-    color: var(--soft-green);
+    color: var(--h2-color);
     font-size: 20px;
-    text-align: right;
     margin-right: 20px;
 }
 
@@ -33,15 +35,20 @@ h3 {
 }
 
 p {
-    color: purple;
+    color: var(--paragraph-text-color);
+    text-wrap: wrap;
 }
 
 a {
     text-decoration: none;
 }
 
+ul {
+    padding-left: 10px;
+}
+
 #title {
-    background-color: var(--peach);
+    background-color: var(--title-background);
     font-size: 26px;
     padding: 30px;
     padding-top: 36px;
@@ -54,15 +61,20 @@ img {
     width: 200px;
 }
 
+body {
+    background-color: var(--title-background);
+    cursor: wait; /* cursor: url("cursor.png"), auto; */
+}
+
 .contents {
     padding: 30px;
     margin: 20px;
-    border: 20px ridge pink;
-    background-color: rgb(251, 227, 231);
+    /* border: 20px ridge pink;
+    background-color: rgb(251, 227, 231); */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 .exciting-things {
@@ -102,13 +114,15 @@ img {
 }
 
 .main-container {
+    align-: center;
+    width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
     margin: 30px;
     padding: 30px;
-    border: 5px dotted rgb(252, 124, 146);
+    border: 5px dotted var(--paragraph-text-color);
 }
 
 .options-banner {
@@ -121,14 +135,14 @@ img {
 
 #return-home-button {
     border-radius: 12px;
-    border: 2px solid var(--darker-peach);
+    border: 2px solid var(--return-home-button-border);
     padding: 10px;
-    background-color: var(--peach);
+    background-color: var(--return-home-button-background);
     cursor: pointer;
     transition: background-color 1s ease;
-    color: var(--soft-green);
+    color: var(--title-color);
 }
 
 #return-home-button:hover {
-  background: var(--darker-peach);
+  background: var(--return-home-button-border);
 }

@@ -1,7 +1,7 @@
 select {
     border-radius: 12px;
     border: 2px solid var(--darker-peach);
-    background: var(--peach);
+    background: var(--title-background);
     padding: 10px;
     cursor: pointer;
     transition: background-color 1s ease;
@@ -21,7 +21,7 @@ select:focus {
 }
 
 #album {
-    color: var(--soft-green);
+    color: var(--title-color);
     font-weight: 30px;
 }
 
@@ -48,7 +48,7 @@ select:focus {
 }
 
 .album-profile-active {
-    background-color: var(--peach);
+    background-color: var(--title-background);
     border: 2px solid var(--darker-peach);
 
 }

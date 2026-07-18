@@ -3,15 +3,77 @@
 <head>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="../css/event.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>music</title>
+    <title>house concert</title>
 </head>
 <body>
     <h1 id="title">house concert!</h1>
     <div class="options-banner">
         <a href="../events.html"><button id="return-home-button">back to events</button></a>
     </div>
-    <img class="poster" src="../images/2026.08.01.png">
-    <p>2026.08.01 house concert</p>
+    <div id="main-box">
+        <div id="poster-and-content-box">
+            <div id="poster">
+                <img src="../images/2026.08.01.png">
+            </div>
+            <div id="content-box">
+                <p><b>who:</b> joyce (guitar), norbu (bass), ralph (singer), joye (singer), alex (singer), vivine (singer), daren (dj)</p>
+                <p><b>what:</b> our first ever house concert‼️</p>
+                <p><b>where:</b> 9 pell st #3d (manhattan chinatown)</p>
+                <p><b>when:</b> saturday, aug 1</p>
+                <p>- doors at 8pm</p>
+                <p>- music at 9pm <strong>sharp!!!</strong></p>
+                <p>- open mic</p>
+                <p>- daren will be spinning a set after 😎🪩</p>
+                <p><b>why:</b> why not? it's live music by your friends!</p>
+                <p><b>rsvp:</b> due to my apartment size, please rsvp accurately! if you want to bring a +1, please indicate that in your rsvp and we will let you know if we have space for them</p>
+                <form action="" id="rsvp-form-box">
+                    <div id="rsvp-form">
+                        <h2>rsvp form</h2>
+                        <fieldset>
+                            <legend>your name:</legend>
+                            <input type="text" id="name" placeholder="your name" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>your preferred contact method (either or both)</legend>
+                            <input type="email" id="email" placeholder="your email" />
+                            <input type="number" id="phone-number" placeholder="phone number" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>will you be there?</legend>
+                            <input type="radio" id="rsvp-yes" name="rsvp-status" value="yes" />
+                            <label for="rsvp-yes">yes!</label><br />
+                            <input type="radio" id="rsvp-no" name="rsvp-status" value="no" />
+                            <label for="rsvp-no">no :(</label><br />
+                            <input type="radio" id="rsvp-maybe" name="rsvp-status" value="maybe" />
+                            <label for="rsvp-maybe">maybe (please update by 7/25 or else will be treated as no)</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>is there a plus one you want to bring?</legend>
+                            <input type="radio" id="plus-one-yes" name="plus-one" value="yes" />
+                            <label for="plus-one-yes">yes</label><br />
+                            <input type="radio" id="plus-one-no" name="plus-one" value="no" />
+                            <label for="plus-one-no">no</label><br />
+                        </fieldset>
+                        <input type="submit" value="submit" />
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <div id="rsvp-list-box">
+            <p>names</p>
+        </div>
+        <div id="disclaimer">
+            <p>if you are wondering why i'm not using a platform:</p>
+            <p>- there are a lot of functions i want that gcal doesn't have</p>
+            <p>- partiful is dubious (read more <a href="https://nyc-noise.com/drone-party/" target="_blank">here</a>)</p>
+            <p>- so i thought why not make my own website i did major in cs after all!</p>
+        </div>
+    </div>
+    <script src="./js/2026.08.01.js"></script>
+</body>
 </html>
