@@ -19,7 +19,6 @@ let map = null;
 let marker = null;
 
 function displayAlbum() {
-
     const albumName = selectedAlbum.value;
     console.log(`Current album value: ${albumName}`);
 

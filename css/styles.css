@@ -63,7 +63,7 @@ img {
 
 body {
     background-color: var(--title-background);
-    cursor: wait; /* cursor: url("cursor.png"), auto; */
+    /* cursor: url("cursor.png"), auto; */
 }
 
 .contents {
@@ -130,7 +130,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    margin: 30px 80px;
+    margin: 2% 5%;
 }
 
 #return-home-button {

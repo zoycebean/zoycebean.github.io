@@ -11,8 +11,12 @@ legend {
 #content-box {
     display: flex;
     flex-direction: column;
-    border: 5px solid red;
     flex: 1;
+    gap: 20px;
+}
+
+#content-text {
+
 }
 
 #disclaimer {
@@ -24,8 +28,7 @@ legend {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 5px solid;
-    margin: 0px 80px;
+    margin: 0px 5% 10% 5%;
     min-width: 200px;
     gap: 30px;
 }
@@ -33,7 +36,6 @@ legend {
 #poster-and-content-box {
     display: flex;
     flex-direction: row;
-    border: 5px solid;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -46,7 +48,6 @@ legend {
     min-width: 200px;
     height: auto;
     overflow: scroll;
-    border: 2px solid;
     float: left;
     flex: 1;
 }
@@ -59,13 +60,38 @@ legend {
 
 #rsvp-form-box {
     border: 5px solid rgb(128, 143, 52);
-    margin: 20px 0px 0px 0px;
-}
-
-#rsvp-form {
-    margin: 10px;
+    padding: 10px;
 }
 
 #rsvp-list-box {
-    border: 5px solid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#rsvp-guests-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+#rsvp-yes-guests-div p {
+    color: rgb(20, 151, 20);
+}
+
+#rsvp-no-guests-div p {
+    color: rgb(209, 40, 40);
+}
+
+#rsvp-maybe-guests-div p {
+    color: rgb(243, 150, 21);
+}
+
+#rsvp-error p {
+    color: red;
+}
+
+#submit {
+    cursor: pointer;
 }
