@@ -35,8 +35,8 @@ rsvpForm.addEventListener("submit", function(event) {
 });
 
 async function sendRsvp() {
-    var name = document.getElementById("rsvp-name").value.toLowerCase();
-    var rsvpPassword = document.getElementById("rsvp-password").value.toLowerCase();
+    var name = document.getElementById("rsvp-name").value.toLowerCase().trim();
+    var rsvpPassword = document.getElementById("rsvp-password").value.toLowerCase().trim();
     var email = document.getElementById("rsvp-email").value;
     var phoneNumber = document.getElementById("rsvp-phone-number").value;
     var rsvpStatus = document.querySelector("input[name='rsvp-status']:checked").value;
