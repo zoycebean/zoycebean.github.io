@@ -1,3 +1,7 @@
+// variables
+let maxGuests = 30;
+let plusOnesPending = true;
+
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
 // import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
@@ -87,11 +91,19 @@ async function verifyNameAndPassword(name, password) {
 }
 
 async function updateRsvpBox() {
-    var maxGuests = 30;
+    document.getElementById("rsvp-form-box").style.display = "none";
+    document.getElementById("rsvp-max-guests-text").style.display = "none";
+
     guestList = await retrieveGuestList();
     var yesGuests = guestList[0];
     var noGuests = guestList[1];
     var maybeGuests = guestList[2];
+
+    if (yesGuests.length >= maxGuests) { // reached max guests
+        document.getElementById("rsvp-max-guests-text").style.display = "block";
+    } else { // 
+        document.getElementById("rsvp-form-box").style.display = "block";
+    }
 
     const guestCountText = document.getElementById("rsvp-remaining-count");
     guestCountText.textContent = (maxGuests - yesGuests.length) + "/" + maxGuests + " spots remain";
@@ -117,7 +129,11 @@ function retrieveGuestList() {
                         yesGuests.push(name);
                         allGuests.push(name);
                         if (data[name].plusOne=="yes") {
-                            maybeGuests.push(name + "'s +1");
+                            if (plusOnesPending) {
+                                maybeGuests.push(name + "'s +1");
+                            } else {
+                                yesGuests.push(name + "'s +1");
+                            }
                         }
                     } else if (rsvpStatus=="maybe") {
                         maybeGuests.push(name);

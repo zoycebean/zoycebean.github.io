@@ -76,6 +76,7 @@ legend {
     flex-wrap: wrap;
     gap: 2%;
 }
+
 #rsvp-yes-guests-div p {
     color: rgb(20, 151, 20);
 }
@@ -89,6 +90,10 @@ legend {
 }
 
 #rsvp-error p {
+    color: red;
+}
+
+#rsvp-max-guests-text p {
     color: red;
 }
 

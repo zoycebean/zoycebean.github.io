@@ -31,45 +31,46 @@
                     <p><b>why:</b> why not? it's live music by your friends!</p>
                     <p><b>rsvp:</b> due to my apartment size, please rsvp accurately! if you want to bring a +1, indicate that in your rsvp and we will let you know if we have space for them (they will show up as "maybe" until then). to update your rsvp, simply use the same name and password and submit again</p>
                 </div>
-                <form action="" id="rsvp-form">
-                    <div id="rsvp-form-box">
-                        <h2>rsvp form</h2>
-                        <fieldset>
-                            <legend>your name:</legend>
-                            <input type="text" id="rsvp-name" placeholder="your name" />
-                        </fieldset>
-                        <fieldset>
-                            <legend>your password:</legend>
-                            <p style="font-size:70%;">(suggested password: your birthday in mmdd + your mom's first name)</p>
-                            <input type="text" id="rsvp-password" />
-                        </fieldset>
-                        <fieldset>
-                            <legend>your preferred contact method (either or both)</legend>
-                            <input type="email" id="rsvp-email" placeholder="email" /> <br>
-                            <input type="number" id="rsvp-phone-number" placeholder="phone number" />
-                        </fieldset>
-                        <fieldset>
-                            <legend>will you be there?</legend>
-                            <input type="radio" id="rsvp-yes" name="rsvp-status" value="yes" checked />
-                            <label for="rsvp-yes">yes!</label><br />
-                            <input type="radio" id="rsvp-no" name="rsvp-status" value="no" />
-                            <label for="rsvp-no">no :(</label><br />
-                            <input type="radio" id="rsvp-maybe" name="rsvp-status" value="maybe" />
-                            <label for="rsvp-maybe">maybe (please update by 7/25 or else will be treated as no)</label>
-                        </fieldset>
-                        <fieldset>
-                            <legend>is there a plus one you want to bring?</legend>
-                            <input type="radio" id="plus-one-yes" name="plus-one" value="yes" />
-                            <label for="plus-one-yes">yes</label><br />
-                            <input type="radio" id="plus-one-no" name="plus-one" value="no" checked />
-                            <label for="plus-one-no">no</label><br />
-                        </fieldset>
-                        <button id="submit" type="submit">submit</button>
-                        <p id="rsvp-error"></p>
-                    </div>
-
-
-                </form>
+                <div id="rsvp-form-box">
+                    <form action="" id="rsvp-form">
+                            <h2>rsvp form</h2>
+                            <fieldset>
+                                <legend>your name:</legend>
+                                <input type="text" id="rsvp-name" placeholder="your name" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>your password:</legend>
+                                <p style="font-size:70%;">(suggested password: your birthday in mmdd + your mom's first name)</p>
+                                <input type="text" id="rsvp-password" required="required" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>your preferred contact method (either or both)</legend>
+                                <input type="email" id="rsvp-email" placeholder="email" /> <br>
+                                <input type="number" id="rsvp-phone-number" placeholder="phone number" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>will you be there?</legend>
+                                <input type="radio" id="rsvp-yes" name="rsvp-status" value="yes" checked />
+                                <label for="rsvp-yes">yes!</label><br />
+                                <input type="radio" id="rsvp-no" name="rsvp-status" value="no" />
+                                <label for="rsvp-no">no :(</label><br />
+                                <input type="radio" id="rsvp-maybe" name="rsvp-status" value="maybe" />
+                                <label for="rsvp-maybe">maybe (please update by 7/25 or else will be treated as no)</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>is there a plus one you want to bring?</legend>
+                                <input type="radio" id="plus-one-yes" name="plus-one" value="yes" />
+                                <label for="plus-one-yes">yes</label><br />
+                                <input type="radio" id="plus-one-no" name="plus-one" value="no" checked />
+                                <label for="plus-one-no">no</label><br />
+                            </fieldset>
+                            <button id="submit" type="submit">submit</button>
+                            <p id="rsvp-error"></p>
+                    </form>
+                </div>
+                <div id="rsvp-max-guests-text">
+                    <p>we have reached maximum guest capacity :( maybe check back later to see if someone un-rsvped</p>
+                </div>
             </div>
         </div>
         <div id="rsvp-list-box">
